@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Felix Pius Omullo Kirasia | Global Health Physician & AI for Equity Advocate</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --gray: #7f8c8d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        section {
+            padding: 3rem 0;
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        section:nth-child(even) {
+            background: var(--light);
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+        }
+        
+        .section-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .timeline-item {
+            margin-bottom: 2rem;
+        }
+        
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-title {
+            font-weight: bold;
+            color: var(--dark);
+        }
+        
+        .timeline-date {
+            color: var(--gray);
+            font-style: italic;
+        }
+        
+        .timeline-org {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .skill-category {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .skill-category h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .publication-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .publication-item:last-child {
+            border-bottom: none;
+        }
+        
+        .publication-title {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+        
+        .publication-authors {
+            font-style: italic;
+            margin-bottom: 0.3rem;
+            color: var(--gray);
+        }
+        
+        .publication-journal {
+            color: var(--secondary);
+        }
+        
+        .collaboration-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .collaborator-name {
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .collaboration-focus {
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .social-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid white;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .social-link:hover {
+            background: white;
+            color: var(--dark);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .timeline-header {
+                flex-direction: column;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Add your profile image here -->
+            <!-- <img src="profile.jpg" alt="Dr. Felix Pius Omullo Kirasia" class="profile-img"> -->
+            <h1>Dr. Felix Pius Omullo Kirasia, MBChB (with IT)</h1>
+            <p class="subtitle">Global Health Physician | Founder of Tech-Enabled Health Initiatives | AI for Equity Advocate</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📍 Lodwar, Kenya</span>
+                </div>
+                <div class="contact-item">
+                    <span>📞 +(254)-740-287 554</span>
+                </div>
+                <div class="contact-item">
+                    <span>✉️ piuskirasia@gmail.com</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://piusomullo.com" class="social-link" target="_blank">Personal Website</a>
+                <a href="https://www.linkedin.com/in/dr-pius-omullo/" class="social-link" target="_blank">LinkedIn</a>
+                <a href="https://orcid.org/0009-0007-7431-1310" class="social-link" target="_blank">ORCID</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-content">
+                <h2>Professional Profile</h2>
+                <p>I am a dedicated physician and research leader on a mission to bridge the gap between cutting-edge AI innovation and equitable healthcare delivery in Africa. My clinical work in rural Kenya, uncovering systemic gaps, and my research in AI and health inequities directly inform my advocacy for scalable, policy-driven solutions. I am building a career to influence national and global health policy, leveraging healthcare systems to transform research into tangible impact for low-resource communities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="initiatives">
+        <div class="container">
+            <div class="section-content">
+                <h2>Founding Initiatives & Leadership</h2>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">Founder & Lead, Kala-Azar Zero Alliance (KAZA)</div>
+                        <div class="timeline-date">2025 – Present</div>
+                    </div>
+                    <div class="timeline-org">Turkana, Kenya</div>
+                    <ul>
+                        <li>Launching a multi-partner alliance to eliminate Visceral Leishmaniasis (Kala-Azar) in the Turkana region.</li>
+                        <li>Forging partnerships with the Turkana County Ministry of Health, private health providers, and tech innovators to develop a replicable model of care.</li>
+                        <li>Leading the design of a community-led, tech-enabled surveillance and diagnostic system to reduce time-to-treatment and mortality.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="container">
+            <div class="section-content">
+                <h2>Key Achievements</h2>
+                <ul>
+                    <li>Published 20+ peer-reviewed commentaries in the BMJ reaching 5 M+ annual readers.</li>
+                    <li>Invited as a trusted peer reviewer for 10+ manuscripts in critical care, public health, and pharmacology for international journals (BMJ, Baishideng).</li>
+                    <li>Selected as an invited speaker at international pediatrics conferences (World Pediatrics Congress 2026, UAE; Pediatrics Summit 2026, Malaysia).</li>
+                    <li>Published 10+ case reports on rare medical conditions in indexed journals.</li>
+                    <li>Certified in Advanced Cardiac Life Support (ACLS), Basic Life Support (BLS), WHO emergency care, bioethics, and health research.</li>
+                    <li>Led medical student advocacy as Vice Chairperson, improving exam transparency and community health outreach.</li>
+                    <li>Multi-centre global research collaborations.</li>
+                    <li>Awarded a $3,300 grant as Principal Investigator for an oncology patient satisfaction study.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <div class="section-content">
+                <h2>Professional Experience</h2>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">Medical Officer</div>
+                        <div class="timeline-date">09.2025 - Present</div>
+                    </div>
+                    <div class="timeline-org">Equity Afya, Lodwar, Kenya</div>
+                    <ul>
+                        <li>Provide comprehensive outpatient care in a resource-limited setting, managing a high volume of cases including tropical diseases (malaria, TB, HIV), pediatric illnesses, and NCDs.</li>
+                        <li>Pioneer the clinic's tech-enabled platform and telehealth services to improve diagnostic accuracy and facilitate specialist consultations, directly informing the development of the KAZA and MSITU initiatives.</li>
+                        <li>Implement evidence-based protocols to enhance patient outcomes and improve the efficiency of service delivery in a high-demand environment.</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">Medical Officer Intern</div>
+                        <div class="timeline-date">08.2024 - 08.2025</div>
+                    </div>
+                    <div class="timeline-org">Murang'a County Referral Hospital, Murang'a, Kenya</div>
+                    <ul>
+                        <li>Spearheaded diagnosing and managing 50+ complex cases, including ectopia cordis, situs inversus, and insulinoma.</li>
+                        <li>Presented cases in grand rounds, enhancing interdisciplinary learning.</li>
+                        <li>Co-developed and implemented a novel TB/HIV patient education program, improving patient adherence by 30%.</li>
+                        <li>Documented rare cases (SCT, ectopia cordis, TA) for peer-reviewed publication.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteer">
+        <div class="container">
+            <div class="section-content">
+                <h2>Volunteer Experience</h2>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">Volunteer Health Consultant</div>
+                        <div class="timeline-date">January 2024 – Present</div>
+                    </div>
+                    <div class="timeline-org">INKOMOKO, Lodwar</div>
+                    <ul>
+                        <li>Advising on healthcare integration for refugee entrepreneurs, enhancing access to medical resources for 500+ beneficiaries.</li>
+                        <li>Developing a health outreach strategy aligned with INKOMOKO's investment programs, improving community health resilience.</li>
+                        <li>Collaborating with cross-functional teams to address health-related barriers MSMEs face in humanitarian settings.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <div class="section-content">
+                <h2>Education</h2>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">MBChB (with IT)</div>
+                        <div class="timeline-date">11.2016 - 05.2023</div>
+                    </div>
+                    <div class="timeline-org">Maseno University, Maseno, Kisumu</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">KCSE</div>
+                        <div class="timeline-date">02.2012 - 12.2015</div>
+                    </div>
+                    <div class="timeline-org">Orero Boys' High School, Rangwe, Homa-Bay</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">KCPE</div>
+                        <div class="timeline-date">01.2006 - 11.2011</div>
+                    </div>
+                    <div class="timeline-org">Rockview Junior Academy, Homa-Bay Town, Homa-Bay</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <div class="container">
+            <div class="section-content">
+                <h2>Research & Publications</h2>
+                
+                <h3>Research Collaborations & Partners</h3>
+                <div class="collaboration-item">
+                    <div class="collaborator-name">Eng. Jasin Owili (Afribot Africa)</div>
+                    <div class="collaboration-focus">Collaboration Focus: Artificial Intelligence, machine learning, and technological innovation for healthcare diagnostics.</div>
+                    <div>Joint Project: "AI for Early Detection of Neglected Tropical Diseases" (Ongoing)</div>
+                </div>
+                
+                <div class="collaboration-item">
+                    <div class="collaborator-name">Khulud Nurani, MBChB, BSc Anat (Hons), Dip. Business IT</div>
+                    <div class="collaboration-focus">Collaboration Focus: Clinical research, rare endocrine disorders, and the intersection of medicine with information technology.</div>
+                    <div>Joint Project: "Recurrent Hypoglycaemia in an Adolescent: A Diagnostic Dilemma of Suspected Insulinoma in a Resource-Limited Setting." (Ongoing)</div>
+                </div>
+                
+                <div class="collaboration-item">
+                    <div class="collaborator-name">Gudisa Bereda, B. Pharm, MPH candidate</div>
+                    <div class="collaboration-focus">Collaboration Focus: Pharmacovigilance, rare disease case reports, and public health.</div>
+                    <div>Joint Projects: "Fatal Rabies Encephalitis in a Kenyan Adolescent: A Case Report Urging One Health Strategies" (Ongoing)</div>
+                </div>
+                
+                <div class="collaboration-item">
+                    <div class="collaborator-name">Walter Otieno, MBChB, M.Med (Paeds), PhD</div>
+                    <div class="collaboration-focus">Collaboration Focus: Infectious disease therapeutics, vaccine immunology, and meta-analysis.</div>
+                    <div>Joint Project: "Comparative efficacy and safety of RTS, S, and R21 malaria vaccines in children under five in Africa: A systematic review and meta-analysis" (Ongoing)</div>
+                </div>
+                
+                <h3>Field of Current Research Projects</h3>
+                <ul>
+                    <li>AI & Healthcare</li>
+                    <li>Tropical and Endemic Diseases (Malaria, HIV, TB, SCD)</li>
+                    <li>Rare cases and diseases</li>
+                    <li>Global Neurosurgery</li>
+                </ul>
+                
+                <h3>Peer-Reviewed Journal Articles</h3>
+                <div class="publication-item">
+                    <div class="publication-title">Fatal small bowel perforation complicating intestinal obstruction in pregnancy: A case report.</div>
+                    <div class="publication-authors">Omullo FP, Anyango OS, Mutua BM, Odoyo MO, Gogo HM, Obung'a VO.</div>
+                    <div class="publication-journal">World J Clin Cases 2025; 13: 109406.</div>
+                </div>
+                
+                <div class="publication-item">
+                    <div class="publication-title">Ectopia Cordis with Fetal Hydrops and Severe Oligohydramnios: A Case Report.</div>
+                    <div class="publication-authors">Omullo P, Parsimei M, Kitheghe T, Zamzam H.</div>
+                    <div class="publication-journal">International Journal of Recent Advances in Multidisciplinary Research, 2024, 12, (01), 10728-10731.</div>
+                </div>
+                
+                <!-- Add more publications as needed -->
+                
+                <h3>Manuscripts in Press</h3>
+                <ul>
+                    <li>Evaluation of satisfaction and perceived service quality among outpatients at Vihiga County Referral Hospital: A cross-sectional study.</li>
+                    <li>Comparing the severity, outcomes, and mortality rates of COVID-19 among diabetics and non-diabetics at Jaramogi Oginga Odinga Teaching and Referral Hospital from March 2020 to March 2021.</li>
+                    <li>Cryptococcal Meningitis In HIV-Positive Pregnancy: A Rare Case Report.</li>
+                    <!-- Add more manuscripts as needed -->
+                </ul>
+                
+                <h3>Ongoing Research Projects</h3>
+                <ul>
+                    <li>AI for Early Detection of Neglected Tropical Diseases (Collaboration with Afribot Africa)</li>
+                    <li>Comparative efficacy and safety of RTS, S, and R21 malaria vaccines in children under five in Africa: A systematic review and meta-analysis</li>
+                    <li>Fatal Rabies Encephalitis in a Kenyan Adolescent: A Case Report Urging One Health Strategies</li>
+                    <!-- Add more projects as needed -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="editorial">
+        <div class="container">
+            <div class="section-content">
+                <h2>Editorial Activities</h2>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">Peer Reviewer</div>
+                        <div class="timeline-date">August 2025</div>
+                    </div>
+                    <div class="timeline-org">World Journal of Critical Care Medicine (Baishideng Publishing Group)</div>
+                    <ul>
+                        <li>Invited to review a minireview titled "Artificial Intelligence in ICUs: An effective roadmap" (Manuscript NO: 112866).</li>
+                        <li>Invitation based on recognized expertise in artificial intelligence applications in healthcare.</li>
+                    </ul>
+                </div>
+                
+                <!-- Add more editorial activities as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="grants">
+        <div class="container">
+            <div class="section-content">
+                <h2>Grants & Funding</h2>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div class="timeline-title">Health-Professional Education Partnership Initiative (HEPI)</div>
+                        <div class="timeline-date">2022</div>
+                    </div>
+                    <div>Principal Investigator: "Evaluation of Satisfaction with Cancer Care among Patients Attending the Oncology Clinic at Jaramogi Oginga Odinga Teaching and Referral Hospital: A cross-sectional study" ($ 3,358.20)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conferences">
+        <div class="container">
+            <div class="section-content">
+                <h2>Conference & Institutional Presentations</h2>
+                <ul>
+                    <li>Invited Speaker, 5th International Conference on Pediatrics and Neonatology (Paris, France | November 2025)
+                        <br>Presentation: "Phocomelia: Bilateral Limb Deficiency in a Neonate"</li>
+                    <li>Invited Speaker, World Pediatrics Congress (Dubai, UAE | March 2026)</li>
+                    <li>Invited Speaker & Session Chair, The 13th Annual International Congress of Gynaecology and Obstetrics (ICGO) (Athens, Greece | April 2026)</li>
+                    <!-- Add more presentations as needed -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container">
+            <div class="section-content">
+                <h2>Continuous Professional Development & Certifications</h2>
+                <ul>
+                    <li>Infectious Disease Modelling for Public Health | September 2025</li>
+                    <li>Clinical Trial Preparedness Training | Clinical Trials Community in Africa Network (CTCAN) September 2025</li>
+                    <li>Advancing HIV Cure Research: A Capacity-Building Seminar | Kenya 09. Sept. 2025</li>
+                    <li>ACLS & BLS Certification | Mediplus LTD 26.08.2025 - 28.08.2025</li>
+                    <!-- Add more certifications as needed -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="section-content">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Clinical & Public Health</h3>
+                        <ul>
+                            <li>Evidence-Based Practice</li>
+                            <li>Tropical & Infectious Disease Management</li>
+                            <li>Health System Strengthening</li>
+                            <li>Infectious Disease Modelling</li>
+                            <li>Outbreak Response Analytics</li>
+                            <li>Epidemiological Data Analysis</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Research & Data Science</h3>
+                        <ul>
+                            <li>Meta-Analysis | RCTs | Observational Studies</li>
+                            <li>SPSS | STATA | Python (Basic)</li>
+                            <li>Programming Languages: R</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Leadership & Innovation</h3>
+                        <ul>
+                            <li>Healthcare Policy Advocacy</li>
+                            <li>AI in Medical Diagnostics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="affiliations">
+        <div class="container">
+            <div class="section-content">
+                <h2>Professional Affiliations & Service</h2>
+                <ul>
+                    <li>Member, American Academy of Pediatrics (AAP) | 2025–Present
+                        <br>Credential ID: 2564826</li>
+                    <li>Member, Kenya Red Cross Society 2025 – Present
+                        <br>Committed to supporting the Society's mandate in disaster response and emergency services, as well as promoting humanitarian principles across Kenya.</li>
+                    <li>Kenya Medical Association (KMA) | Active Member</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="languages">
+        <div class="container">
+            <div class="section-content">
+                <h2>Language Skills</h2>
+                <ul>
+                    <li>English (Fluent)</li>
+                    <li>Kiswahili (Fluent)</li>
+                    <li>Abasabu (Native)</li>
+                    <li>Luo (Fluent)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="container">
+            <div class="section-content">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Hiking</li>
+                    <li>Photography</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Dr. Felix Pius Omullo Kirasia</p>
+            <p>Referees available upon request</p>
+        </div>
+    </footer>
+</body>
+</html>
